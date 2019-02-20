@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Survey Template | PrepBootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/table.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Survey <small>Your Internet Habits</small></h1>
+</div>
+
+<!-- Survey - START -->
+<div class="container">
+    <div class="col-md-2">
+    </div>
+	 <h3>Section 1 <small>Personal Info</small></h3>
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">Personal Info</div>
+            <div class="panel-body">
+                Gender:
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" /> Male
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" /> Female
+                    </label>
+                </div>
+                <br />
+                <br />
+
+                Age Group:
+                <br />
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" />Under 18
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" />18-25
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" />25-50
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" autocomplete="off" />Over 50
+                    </label>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+    <h3>Section 2 <small>Experience</small></h3>
+        <div class="panel panel-default">
+            <div class="panel-heading">How would you rate your experience with the following devices? </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-5">
+                        <span style="font-size:18px;">Desktop:</span>
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-7">
+                        <div id="rate1" style="margin-top:6px;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-5">
+                        <span style="font-size:18px;">Laptop:</span>
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-7">
+                        <div id="rate2" style="margin-top:6px;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-5">
+                        <span style="font-size:18px;">Mobile:</span>
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-7">
+                        <div id="rate3" style="margin-top:6px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <h3>Section 3 <small>Knowledge</small></h3>
+        <div class="panel panel-default">
+            <div class="panel-heading">Out of 100, how would you rate your knowledge in the following subject areas:</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <span style="font-size:18px;">Internet security:</span>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-2 text-center">
+                        <button id="decrease1" style="width:100%; max-width:35px;">-</button>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <div style="width:100%;" id="progress1"></div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-2 text-center">
+                        <button id="increase1" style="width:100%; max-width:35px;">+</button>
+                    </div>
+                </div>
+                <div class="clearfix"><br /></div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <span style="font-size:18px;">Internet scams:</span>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-2 text-center">
+                        <button id="decrease2" style="width:100%; max-width:35px;">-</button>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <div style="width:100%;" id="progress2"></div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-2 text-center">
+                        <button id="increase2" style="width:100%; max-width:35px;">+</button>
+                    </div>
+                </div>
+                <div class="clearfix"><br /></div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-12">
+                        <span style="font-size:18px;">Internet hacking:</span>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-2 text-center">
+                        <button id="decrease3" style="width:100%; max-width:35px;">-</button>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <div style="width:100%;" id="progress3"></div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-2 text-center">
+                        <button id="increase3" style="width:100%; max-width:35px;">+</button>
+                    </div>
+                    
+			
+                </div>
+            </div>
+        </div> 
+        <h3>Section 4 <small>Confidence</small></h3>
+            <div class="panel panel-default">
+                <div class="panel-heading">On a scale of 1 to 5 (1 being low and 5 being high) how would you rate you confidence with the following:</div>
+                <div class="panel-body">
+        
+        <table class="striped-columns border">
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sending an email</td>
+                        <td><input type="radio" value="1" name="enthusiasm"/></td>
+                        <td><input type="radio" value="2" name="enthusiasm"/></td>
+                        <td><input type="radio" value="3" name="enthusiasm"/></td>
+                        <td><input type="radio" value="4" name="enthusiasm"/></td>
+                        <td><input type="radio" value="5" name="enthusiasm"/></td>
+                    </tr>
+                    <tr>
+                        <td>Browsing a website</td>
+                        <td><input type="radio" value="1" name="knowledgeable"/></td>
+                        <td><input type="radio" value="2" name="knowledgeable"/></td>
+                        <td><input type="radio" value="3" name="knowledgeable"/></td>
+                        <td><input type="radio" value="4" name="knowledgeable"/></td>
+                        <td><input type="radio" value="5" name="knowledgeable"/></td>
+                    </tr>
+                    <tr>
+                        <td>Making a purchase online</td>
+                        <td><input type="radio" value="1" name="timeliness"/></td>
+                        <td><input type="radio" value="2" name="timeliness"/></td>
+                        <td><input type="radio" value="3" name="timeliness"/></td>
+                        <td><input type="radio" value="4" name="timeliness"/></td>
+                        <td><input type="radio" value="5" name="timeliness"/></td>
+                    </tr>
+                    <tr>
+                        <td>Online banking</td>
+                        <td><input type="radio" value="1" name="helpful"/></td>
+                        <td><input type="radio" value="2" name="helpful"/></td>
+                        <td><input type="radio" value="3" name="helpful"/></td>
+                        <td><input type="radio" value="4" name="helpful"/></td>
+                        <td><input type="radio" value="5" name="helpful"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            <script> $('input:radio').click(function() {
+                var enthusiasm = $('input:radio[name=enthusiasm]:checked').val();
+                var knowledgeable = $('input:radio[name=knowledgeable]:checked').val();
+                var timeliness = $('input:radio[name=timeliness]:checked').val();
+                var helpful = $('input:radio[name=helpful]:checked').val();
+                
+                //todo get average column of answered columns
+                //highlight average column
+                
+                // provide plus minus arrows next to each answer to indicate deviation from average
+            }); </script>
+            <div id="Button">
+                    <input type="submit" value="Submit Answers" onclick="chekcSubmitType()"/> <!--- button to submit answers --->
+               </div>
+         </div>
+    </div>
+</div>
+
+<!-- you need to include the shieldui css and js assets in order for the components to work -->
+<link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+<script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+            
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('#rate1').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 0,
+            markPreset: false
+        });
+
+        $('#rate2').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 0,
+            markPreset: false
+        });
+
+        $('#rate3').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 0,
+            markPreset: false
+        });
+
+        var progress1 = $("#progress1").shieldProgressBar({
+            value: 50,
+            text: {
+                enabled: true,
+                template: "{0} %"
+            }
+        }).swidget();
+
+        var progress2 = $("#progress2").shieldProgressBar({
+            value: 50,
+            text: {
+                enabled: true,
+                template: "{0} %"
+            }
+        }).swidget();
+
+        var progress3 = $("#progress3").shieldProgressBar({
+            value: 50,
+            text: {
+                enabled: true,
+                template: "{0} %"
+            }
+        }).swidget();
+
+
+        $("#increase1").shieldButton({
+            events: {
+                click: function () {
+                    progress1.value(progress1.value() + 10);
+                }
+            }
+        });
+        $("#decrease1").shieldButton({
+            events: {
+                click: function () {
+                    progress1.value(progress1.value() - 10);
+                }
+            }
+        });
+
+        $("#increase2").shieldButton({
+            events: {
+                click: function () {
+                    progress2.value(progress2.value() + 10);
+                }
+            }
+        });
+        $("#decrease2").shieldButton({
+            events: {
+                click: function () {
+                    progress2.value(progress2.value() - 10);
+                }
+            }
+        });
+
+        $("#increase3").shieldButton({
+            events: {
+                click: function () {
+                    progress3.value(progress3.value() + 10);
+                }
+            }
+        });
+        $("#decrease3").shieldButton({
+            events: {
+                click: function () {
+                    progress3.value(progress3.value() - 10);
+                }
+            }
+        });
+    });
+</script>
+
+<style>
+    .slider {
+        width: 100%;
+    }
+</style>
+
+<!-- Survey - END -->
+
+</div>
+
+</body>
+</html>
